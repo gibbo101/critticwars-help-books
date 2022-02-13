@@ -42,4 +42,4 @@ class Comments(models.Model):
     content = models.TextField()
 
     class Meta:
-        ordering = ['-created_on']
+        ordering = ['-created_date']
