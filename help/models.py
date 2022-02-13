@@ -33,7 +33,7 @@ class Subject(models.Model):
         return self.title
 
 
-class Comments(models.Model):
+class Comment(models.Model):
     ''' The table for comments '''
     subject = models.ForeignKey(Subject, on_delete=models.CASCADE, related_name="subjects")
     author = models.ForeignKey(User, on_delete=models.CASCADE, related_name="comments_posts")
