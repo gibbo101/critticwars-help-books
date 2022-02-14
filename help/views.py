@@ -6,4 +6,4 @@ from .models import Category
 class CategoryList(generic.ListView):
     model = Category
     queryset = Category.objects.order_by('id')
-    template_name='base.html'
+    template_name = 'index.html'
