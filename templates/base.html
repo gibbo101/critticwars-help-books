@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,7 +11,14 @@
 </head>
 
 <body>
-
+    {% for category in category_list %}
+    {{ category.title }}
+    {% endfor %}
+    <main>
+        {% block content %}
+        <!-- Content Goes here -->
+        {% endblock content %}
+    </main>
 </body>
 
 </html>
